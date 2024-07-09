@@ -57,6 +57,12 @@ body{
     font-weight: bold;
 }
 
+.span-hl-2{
+    color: mediumspringgreen;
+    font-style: italic;
+    font-weight: bold;
+}
+
 .span-th{
     background: linear-gradient(to left, crimson, white, royalblue, white, crimson);
     background-clip: text;

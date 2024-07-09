@@ -4,12 +4,9 @@
 body {
     background: linear-gradient(#394B8B, #0F1425);
     background-repeat: no-repeat;
-    /* background-size: cover; */
     background-attachment: fixed;
     width: 100%;
     height: 100%;
-    /* what is this bs? */
-    /* overflow: hidden; */
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     margin: 0;
@@ -221,15 +218,15 @@ body {
     cursor: pointer;
 }
 
-.anim-right{
-    transition: 0.3s;
-}
-
 @media (pointer: fine){
+    .anim-right{
+        transition: 0.3s;
+    }
     .anim-right:hover{
         transition: 0.3s;
         transform: translateX(5px);
     }
+
     .anim-scale{
         transition: 0.3s;
     }
@@ -237,10 +234,6 @@ body {
         transition: 0.3s;
         transform: scale(1.05);
     }
-}
-
-@media (pointer: coarse){
-    
 }
 
 .link-btn{
