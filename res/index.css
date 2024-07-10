@@ -53,7 +53,7 @@ body {
     }
     #content{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 50% 50%;
         width: 90%;
         padding: 1em;
         #l-grid{
@@ -254,6 +254,7 @@ body {
     color: white;
 }
 
-.inline-125{
-    padding: 1.25em;
+.inline{
+    padding: 1.5em;
+    margin-top: 0.25em;
 }
