@@ -4,12 +4,9 @@
 body {
     background: linear-gradient(#394B8B, #0F1425);
     background-repeat: no-repeat;
-    /* background-size: cover; */
     background-attachment: fixed;
     width: 100%;
     height: 100%;
-    /* what is this bs? */
-    /* overflow: hidden; */
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     margin: 0;
@@ -57,7 +54,7 @@ body {
     }
     #content{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 50% 50%;
         width: 90%;
         padding: 1em;
         #l-grid{
@@ -120,7 +117,7 @@ body {
     }
     .logos{
         display: grid;
-        gap: 8px;
+        gap: 10px;
         grid-auto-flow: column;
         grid-template-rows: repeat(4, auto);
         padding: 0.75em;
@@ -222,15 +219,15 @@ body {
     cursor: pointer;
 }
 
-.anim-right{
-    transition: 0.3s;
-}
-
 @media (pointer: fine){
+    .anim-right{
+        transition: 0.3s;
+    }
     .anim-right:hover{
         transition: 0.3s;
         transform: translateX(5px);
     }
+
     .anim-scale{
         transition: 0.3s;
     }
@@ -238,10 +235,6 @@ body {
         transition: 0.3s;
         transform: scale(1.05);
     }
-}
-
-@media (pointer: coarse){
-    
 }
 
 .link-btn{
@@ -253,7 +246,7 @@ body {
     span{
         font-size: 16px;
         font-weight: bold;
-        margin-left: 6px;
+        margin-left: 8px;
     }
 }
 
@@ -262,6 +255,7 @@ body {
     color: white;
 }
 
-.inline-125{
-    padding: 1.25em;
+.inline{
+    padding: 1.5em;
+    margin-top: 0.25em;
 }

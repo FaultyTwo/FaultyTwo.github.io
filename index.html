@@ -8,13 +8,13 @@
         <link href="res/index.css" rel="stylesheet" type="text/css">
         <link rel="icon" type="image/x-icon" href="res/favicon.ico">
     </head>
-    <body>
+    <body onload="resetPage()">
         <div class="grid">
             <div id="lcol">
                 <div class="boxes box-one">
                     <div class="title">Let's keep this tidy</div>
                     <div id="content">
-                        <div id="l-grid">&lt;image goes here&gt;</div>
+                        <div id="l-grid"></div>
                         <div id="r-grid">
                             <div id="links">
                                 <a class="greeting anim-right cursor-pointer" 
@@ -28,7 +28,7 @@
                             </div>
                             <div id="credits">
                                 <div>Made with ...</div>
-                                <div>no framework</div><br>
+                                <div>pure static goodies</div><br>
                             </div>
                         </div>
                     </div>
@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div class="boxes box-two">
-                    <div class="inline-125">
+                    <div class="inline">
                         <div class="title">Seek me @</div>
                         <div class="logos">
                             <a class="link-btn cursor-pointer anim-scale" 
@@ -52,6 +52,12 @@
                                 <img src="res/logos/github.png" height="46" width="48" alt="GitHub Logo">
                                 <span>Github</span>
                             </a>
+                            <a class="link-btn cursor-pointer anim-scale" 
+                                href="mailto:busi.wintree@gmail.com"
+                                target="_blank">
+                                <img src="res/logos/email.png" height="46" width="48" alt="GitHub Logo">
+                                <span>Email</span>
+                            </a>
                         </div>
                     </div>
                     <div class="foot">&lt;a&gt;&lt;/a&gt;</div>
@@ -60,7 +66,7 @@
             <div id="rcol" class="boxes">
                 <div class="title">Informator-9000</div>
                 <div id="info">
-                    <iframe id="info-iframe" src="res/subpages/greeting.html" title="subpages"></iframe>
+                    <iframe id="info-iframe" title="subpages"></iframe>
                 </div>
             </div>
         </div>

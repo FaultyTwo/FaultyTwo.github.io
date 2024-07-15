@@ -18,7 +18,7 @@ body{
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     overflow-x: hidden;
-    padding: 0.5em;
+    padding: 0.75em;
     color: white;
 }
 
@@ -54,6 +54,12 @@ body{
 
 .span-hl{
     color: mediumspringgreen;
+    font-weight: bold;
+}
+
+.span-hl-2{
+    color: mediumspringgreen;
+    font-style: italic;
     font-weight: bold;
 }
 
