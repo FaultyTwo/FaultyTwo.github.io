@@ -10,12 +10,14 @@ body {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     margin: 0;
+    padding: 0;
 }
 
 .grid{
     display: grid;
     grid-template-columns: 50% 50%;
     padding: 1em;
+    transition: 0.5s;
 }
 
 .boxes{
@@ -74,7 +76,7 @@ body {
                     text-decoration: none;
                     color: white;
                     font-size: 24px;
-                    margin-bottom: 16px;
+                    margin-bottom: 4px;
                 }
                 .about{
                     text-decoration: none;
@@ -96,6 +98,9 @@ body {
                 padding-top: 1em;
                 margin-top: 0.75em;
                 text-align: right;
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                user-select: none;
             }
         }
     }
@@ -114,13 +119,26 @@ body {
         -webkit-user-select: none;
         user-select: none;
     }
+    ::-webkit-scrollbar {
+        width: 1px;
+        height: 5px;
+    }
+    ::-webkit-scrollbar-track {
+        background: gray; 
+    }
+    ::-webkit-scrollbar-thumb {
+        background: white; 
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: darkgray; 
+    }
     .logos{
         display: grid;
         gap: 10px;
         grid-auto-flow: column;
-        grid-template-rows: repeat(4, auto);
+        grid-template-rows: repeat(3, auto);
         padding: 0.75em;
-        /* overflow-x: scroll; */
+        overflow-x: auto;
     }
 }
 
@@ -135,10 +153,18 @@ body {
     .title{
         font-size: 24px;
         color: white;
-        padding: 1em;
+        padding: 1em 0 1em 1em;
         -moz-user-select: none;
         -webkit-user-select: none;
         user-select: none;
+    }
+    .flex{
+        display: flex;
+        align-items: center;
+        .enlarge{
+            cursor: pointer;
+            margin-left: 1em;
+        }
     }
 }
 
@@ -165,7 +191,7 @@ body {
 }
 
 /* mobile */
-@media (max-width: 768px) {
+@media (width <= 768px) {
     .grid{
         display: block;
     }
@@ -212,6 +238,9 @@ body {
     padding-left: 1em;
     font-weight: lighter;
     color: white;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .cursor-pointer{
