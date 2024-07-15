@@ -21,10 +21,11 @@
                                     onclick="changePage('greeting')" href="#info">
                                     <div>Greeting! ></div>
                                 </a>
-                                <a class="about anim-right cursor-pointer" 
+                                <a class="anim-right else"
                                     onclick="changePage('about')" href="#info">About ></a>
-                                <a class="anim-right else" onclick="changePage('bio')" href="#info">Bio ></a>
-                                <a class="anim-right else" onclick="changePage('dev')" href="#info">Dev ></a>
+                                <!-- <a class="anim-right else" onclick="changePage('creative')" href="#info">Creative ></a> -->
+                                <a class="anim-right else" onclick="changePage('work')" href="#info">Work ></a>
+                                <a class="anim-right else" onclick="changePage('port')" href="#info">Portfolio ></a>
                             </div>
                             <div id="credits">
                                 <div>Made with ...</div>
@@ -64,7 +65,11 @@
                 </div>
             </div>
             <div id="rcol" class="boxes">
-                <div class="title">Informator-9000</div>
+                <div class="flex">
+                    <div class="title">Informator-9000</div>
+                    <img src="res/enlarge-out.png" class="enlarge anim-scale"
+                        width="20px" height="20px" onclick="enlargeInfo()" />
+                </div>
                 <div id="info">
                     <iframe id="info-iframe" title="subpages"></iframe>
                 </div>
