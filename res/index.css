@@ -224,9 +224,11 @@ body {
         margin-top: 20px;
         margin-right: 5vw;
         min-height: 90vh; 
+        margin-bottom: 1.25em;
         float: right;
         #info{
             min-height: 70vh;
+            margin-bottom: 1em;
         }
     }
 }
