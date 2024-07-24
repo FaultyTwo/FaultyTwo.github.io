@@ -1,0 +1,14 @@
+.head{
+    text-align: left !important;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 14px;
+}
+
+.point{
+    margin-bottom: -8px;
+}
+
+ul li{
+    text-align: justify;
+}

@@ -19,13 +19,16 @@ function enlargeInfo(){
     let domlgrid = document.querySelector("#l-grid")
     let domcontent = document.querySelector("#content")
     let isSmallScreen = screen.width <= 768 || window.innerWidth <= 768;
+    let enlargeDom = document.querySelector(".enlarge")
 
     if(!isSmallScreen){ // avoid changing dom when mobile ui is in usage
         if(enlargeBool){
+            enlargeDom.src = "res/enlarge-out.png"
             domlgrid.style.display = 'block';
             dom.style.gridTemplateColumns = "50% 50%";
             domcontent.style.gridTemplateColumns= '50% 50%';
         } else {
+            enlargeDom.src = "res/enlarge-in.png"
             domlgrid.style.display = 'none';
             dom.style.gridTemplateColumns = "30% 70%";
             domcontent.style.gridTemplateColumns= '100%';
@@ -38,7 +41,7 @@ function widthMobile(){
     let enlargeDom = document.querySelector(".enlarge")
     if(enlargeDom == null){
         return;
-    } 
+    }
 
     if(screen.width <= 768 || window.innerWidth <= 768){
         enlargeDom.style.opacity = 0.5;
