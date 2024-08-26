@@ -6,6 +6,7 @@ function changePage(page_name){
     }
     dom.src = resource;
 }
+changePage("greeting")
 
 let enlargeBool = false;
 function enlargeInfo(){
@@ -53,7 +54,3 @@ window.addEventListener('load', () => {
 window.addEventListener('resize', () => {
     widthMobile()
 })
-
-let dom = document.getElementById("info-iframe");
-dom.src = ""
-changePage("greeting")
