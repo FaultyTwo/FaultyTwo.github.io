@@ -7,12 +7,6 @@ function changePage(page_name){
     dom.src = resource;
 }
 
-function resetPage(){
-    let dom = document.getElementById("info-iframe");
-    dom.src = ""
-    changePage("greeting")
-}
-
 let enlargeBool = false;
 function enlargeInfo(){
     let dom = document.querySelector(".grid")
@@ -59,3 +53,7 @@ window.addEventListener('load', () => {
 window.addEventListener('resize', () => {
     widthMobile()
 })
+
+let dom = document.getElementById("info-iframe");
+dom.src = ""
+changePage("greeting")
