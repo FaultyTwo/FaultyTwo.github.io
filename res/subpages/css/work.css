@@ -6,9 +6,27 @@
 }
 
 .point{
-    margin-bottom: -8px;
+    text-decoration: underline;
+}
+
+.mb-m8{
+    margin-bottom: -0.5em;
+}
+
+.point-extra{
+    font-style: italic;
+    margin-top: 0.5em;
+    margin-bottom: -0.5em;
 }
 
 ul li{
     text-align: justify;
+}
+
+.span-yt{
+    color: rgb(255, 87, 87);
+}
+
+.span-grey{
+    color: rgb(178, 178, 178);
 }
