@@ -6,12 +6,7 @@ function changePage(page_name){
     }
     dom.src = resource;
 }
-
-function resetPage(){
-    let dom = document.getElementById("info-iframe");
-    dom.src = ""
-    changePage("greeting")
-}
+changePage("greeting")
 
 let enlargeBool = false;
 function enlargeInfo(){
