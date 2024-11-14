@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "Infer";
+    src: url("./public/fonts/Inter-VariableFont_opsz,wght.ttf") 
+}
+
+* {
+    font-family: "Infer";
+}
+
+body {
+    background: #3A6EA5;
+}
+
+#window {
+    margin: auto;
+    width: 80vw;
+    height: 90vh;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid gray;
+    border-bottom: 2px solid gray;
+    background-color: #D9D9D9;
+    #window-head{
+        display: grid;
+        grid-template-columns: min-content auto auto;
+        align-content: center;
+        color: white;
+        height: 30px;
+        user-select: none;
+        background: linear-gradient(90deg, #0A246A 0%, #A6CAF0 100%);
+        .program_icon{
+            margin-left: 8px;
+            margin-right: 8px;
+            align-self: center;
+            -webkit-user-drag: none;
+        }
+        .close_btn{
+            align-self: center;
+            justify-self: end;
+            margin-right: 8px;
+            -webkit-user-drag: none;
+            cursor: not-allowed;
+        }
+    }
+    #window-content{
+        display: grid;
+        grid-template-columns: 25% 73%;
+        height: calc(100% - 30px);
+        #sidebar{
+            margin: 1em 0 1em 1em;
+            border-top: 2px solid white;
+            border-left: 2px solid white;
+            border-right: 2px solid gray;
+            border-bottom: 2px solid gray;
+        }
+        #content{
+            margin: 1em 0 1em 1em;
+            border-top: 2px solid white;
+            border-left: 2px solid white;
+            border-right: 2px solid gray;
+            border-bottom: 2px solid gray;
+        }
+    }
+}
+
+footer {
+    margin: 8px;
+    text-align: right;
+    color: white;
+    user-select: none;
+}
