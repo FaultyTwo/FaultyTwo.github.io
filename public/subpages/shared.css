@@ -1,13 +1,28 @@
 
 body {
+    padding: 1em;
+}
+
+.corpus {
     font-size: 18px;
     font-family: serif;
     text-align: justify;
-    padding-right: 8px;
 }
 
 .qa-head{
     font-size: 24px;
     margin-top: 15px;
     margin-bottom: 8px;
+}
+
+.header-img{
+    height: 100%;
+    width: 100%;
+}
+
+.quote{
+    font-family: "Brush Script MT", serif;
+    text-align: center;
+    font-size: 48px;
+    margin: 0.25em;
 }
