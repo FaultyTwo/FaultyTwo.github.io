@@ -42,6 +42,7 @@ body {
         color: white;
         height: 30px;
         -webkit-user-select: none;
+        -moz-user-select: none;
         user-select: none;
         background: linear-gradient(90deg, #0A246A 0%, #A6CAF0 100%);
 
@@ -83,6 +84,7 @@ body {
 
                 #info-fav {
                     -moz-user-select: none;
+                    -webkit-user-select: none;
                     user-select: none;
                     margin-top: 10px;
                     font-style: italic;
@@ -106,6 +108,7 @@ body {
                     background-clip: text;
                     -webkit-text-fill-color: transparent;
                     -moz-user-select: none;
+                    -webkit-user-select: none;
                     user-select: none;
                 }
 
@@ -139,6 +142,7 @@ body {
                     background-clip: text;
                     -webkit-text-fill-color: transparent;
                     -moz-user-select: none;
+                    -webkit-user-select: none;
                     user-select: none;
                 }
 
@@ -186,6 +190,7 @@ footer {
     font-weight: bold;
     margin: 8px;
     text-align: right;
+    -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
 }
