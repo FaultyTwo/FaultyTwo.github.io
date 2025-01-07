@@ -5,6 +5,11 @@
         <link rel="stylesheet" href="index.desktop.css" />
         <link rel="icon" type="image/svg+xml" href="/public/imgs/icon.svg" />
         <script defer src="index.js"></script>
+        <!-- Github Page doesn't support CSP ... -->
+        <!-- <meta content="default-src 'none'; 
+            style-src 'self'; frame-src 'self'; 
+            img-src 'self'; font-src 'self'; 
+            connect-src ws://127.0.0.1:3001" http-equiv="Content-Security-Policy" /> -->
     </head>
     <body>
         <div id="window">
@@ -18,7 +23,7 @@
             <div id="window-content">
                 <div id="sidebar">
                     <div id="info">
-                        <img src="public/imgs/placeholder.jpg" class="profile-img" />
+                        <img src="public/imgs/placeholder.jpg" class="profile-img" title="Me when I have to write CSS" />
                         <div id="info-fav">
                             "Taste the aesthetics."
                         </div>
