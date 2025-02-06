@@ -8,7 +8,10 @@ export default {
   ],
   theme: {
     extend: {
-      
+      textColor: {
+        "green-highlight": "#0AFDA0",
+        "sky-highlight": "#00B8FF"
+      }
     },
   },
   plugins: [],

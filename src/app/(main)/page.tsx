@@ -1,4 +1,5 @@
 import { Metadata } from "next"
+import DialogueBox from "./_components/DialogueBox"
 
 export const metadata: Metadata = {
     title: "Home"
@@ -7,7 +8,11 @@ export const metadata: Metadata = {
 export default function HomePage(){
     return (
         <>
-            <div>I ordered 99 beers, I drank 99 beers, I drove a '99 toyota. Now I'm 99% dead.</div>
+        {/* <div className="flex flex-col gap-y-4">
+            <DialogueBox />
+            <Newest />
+        </div> */}
+        <DialogueBox />
         </>
     )
 }
